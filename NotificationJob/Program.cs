@@ -10,6 +10,11 @@ namespace NotificationJob
     {
         static void Main(string[] args)
         {
+            DoNotifications DoWork = new DoNotifications();
+
+            DoWork.GetRelevantCases();
+            DoWork.SendNotifications();
         }
+
     }
 }
